@@ -24,12 +24,13 @@ void solve(long long A, long long B, long long ten){
     calc(B,ten);
     B--;
   }
-long long cnt = (B/10 - A/10 + 1);
+	long long cnt = (B/10 - A/10 + 1);
 
-for(int i=0;i<10;++i){
-  check[i] += cnt*ten;
-}
-solve(A/10, B/10, ten*10);
+	for(int i=0;i<10;++i){
+  		check[i] += cnt*ten;
+	}
+	
+	solve(A/10, B/10, ten*10);
   
 }
 
