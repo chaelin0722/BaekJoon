@@ -6,7 +6,7 @@ int main(void){
 	cin>>n;
 	
 	int arr[3] = {0};
-	int num, i, mok;
+	int num, i, mok, result =10000;
 	num = n-1;
 	
 	while(num--){	
@@ -16,11 +16,15 @@ int main(void){
 			arr[i] = mok%10;
 			mok = mok/10;
 		}
-		if(num+arr[0]+arr[1]+arr[2]== n) {
+		
+		if(num+arr[0]+arr[1]+arr[2]== n && num>result) {
 			cout<<num<<endl;
 			return 0;
+		}else if(num+arr[0]+arr[1]+arr[2]== n && num<result){
 			
+			num = result;
 		}	
+		
 	}
 	cout<<"0\n"<<endl;
 	
