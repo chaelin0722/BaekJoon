@@ -5,28 +5,22 @@ int main(void){
 	int n;
 	cin>>n;
 	
-	int arr[3] = {0};
-	int num, i, mok, result =10000;
-	num = n-1;
-	
-	while(num--){	
-		mok = num;
-	
-		for(i=0;i<3;i++){
-			arr[i] = mok%10;
-			mok = mok/10;
+	int sum, mok, i;
+	for(i=1;i<n;i++){
+		sum = i;  //어떤 수와 아래의 각 자리의 수가 합해지므로.. sum = 어떤수로 초기화한다. 
+		mok = i;
+		
+		while(mok){
+			sum += mok%10;
+			mok /= 10;
+		}
+		if(n == sum){
+			cout<<i<<endl;
+			return 0;
 		}
 		
-		if(num+arr[0]+arr[1]+arr[2]== n && num>result) {
-			cout<<num<<endl;
-			return 0;
-		}else if(num+arr[0]+arr[1]+arr[2]== n && num<result){
-			
-			num = result;
-		}	
-		
 	}
-	cout<<"0\n"<<endl;
+	cout<<"0"<<endl;
 	
 	return 0;
 }
