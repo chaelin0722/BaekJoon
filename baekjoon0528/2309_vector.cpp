@@ -16,7 +16,7 @@ void total(void)
          //9명 난쟁이 합 중 두명의 난쟁이 합을 뺐을 때 100이 되면
 	         if (sum - height[i] - height[j] == 100)
     	     {
-                 for (int k = 0; k < 9; k++)
+                for (int k = 0; k < 9; k++)
                     if (k != i && k != j)
                         cout << height[k] << endl;
 
