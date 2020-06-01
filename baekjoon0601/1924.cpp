@@ -18,7 +18,7 @@ public:
 	void solution(){
 		int i;
 		for(i=0;i<m-1;i++)	d += month[i];
-		key = d%7;
+		key = d%7;  //1월 1일이 월요일이므로.. 총 일수를 7로 나눈 나머지가 요일이 된다.. 
 	}
 	void printDay() const{
 		cout << day[key];
