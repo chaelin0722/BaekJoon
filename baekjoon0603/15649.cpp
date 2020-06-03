@@ -16,12 +16,13 @@ void dfs(int cnt){
 	}
 
 	for(int i=1; i<=N; i++){
-		if(!check[i]){
+		if(!check[i]){  // checked == 0 과 같은 말  반대로 if(a) 는 if(a != 0) 과 같은말 
 			check[i] = true;
 			lists[cnt] = i;
 			dfs(cnt+1);
+			cout<<"언제 실행되?\n" ;
 			check[i] = false;
-		}
+		} 
 	}	
 }
 int main(void){
