@@ -11,4 +11,8 @@
 >>>>>>> c29dbde... Update README.md
 =======
 #### also study math problems~ yehhh
+<<<<<<< HEAD
 >>>>>>> 506ebde... add something haha
+=======
+#### study english tooooo~ teps and toeic which one???
+>>>>>>> 3547620... add some comments
