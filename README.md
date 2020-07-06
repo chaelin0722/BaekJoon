@@ -4,6 +4,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### study math problems!
 #### study english teps!!
 =======
@@ -18,5 +19,8 @@
 #### study english tooooo~ teps and toeic which one???
 >>>>>>> 3547620... add some comments
 =======
+=======
+#### also study math problems!!
+>>>>>>> 498e570... Update README.md
 #### study english teps!!
 >>>>>>> 267ace4... Edit
