@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### study math problems!
 #### study english teps!!
 =======
@@ -22,5 +23,8 @@
 =======
 #### also study math problems!!
 >>>>>>> 498e570... Update README.md
+=======
+#### also study math problems!
+>>>>>>> 55c0203... Update README.md
 #### study english teps!!
 >>>>>>> 267ace4... Edit
