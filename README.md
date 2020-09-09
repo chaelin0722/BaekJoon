@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### study math problems!
 #### study english teps!!
 =======
@@ -32,3 +33,7 @@
 >>>>>>> 18e983f... Change
 #### study english teps!!
 >>>>>>> 267ace4... Edit
+=======
+#### study math problems!
+#### study english teps!!
+>>>>>>> 03e33baa471838058a31854ae5030a8324c206fb
