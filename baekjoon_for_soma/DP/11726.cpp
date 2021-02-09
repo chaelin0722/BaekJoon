@@ -1,13 +1,8 @@
 #include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<math.h>
-#include<algorithm>
 
 #define MAX 1001
 int N;
-int DP[MAX];
+int DP[MAX] = {0};
 
 using namespace std;
 
@@ -24,9 +19,9 @@ int main(){
 	DP[1] = 2;
 	
 	for(int i=2;i<N;i++){
-		DP[i] = DP[i-1] + DP[i-2];
+		DP[i] = (DP[i-1] + DP[i-2])%10007;
 	}
 	
-	cout<<DP[N-1]%10007;
+	cout<<DP[N-1];
 	return 0;
 }
