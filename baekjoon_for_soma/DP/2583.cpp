@@ -38,16 +38,29 @@ void init(){
 
 int main(){
 	init();
+	vector <int> vec;
 	cin>>M>>N>>K;
-	
-	for(int i=0;i<M;i++){
-		for(int j=0;j<N;j++){
-			mat[i][j];
+	while(K--){
+		int x1, x2, y1, y2;
+		cin >> y1 >> x1 >> y2 >> x2;
+		for(int i = x1; i <x2; i++){
+			for(int j = y1; j <y2; j++){
+				mat[i][j]  = 1;
+				visit[i][j] = true;
+			}
 		}
 	}
-	
-	
-	cout<< <<endl;
-	cout<< <<endl;
+	for(int i=0;i<M;i++){
+		for(int j=0;j<N;j++){
+			if(mat[i][j] == 0 && !visit[i][j]){
+				cnt = 0;
+				DFS(i,j);
+				vec.push_back(cnt);
+			}
+		}
+	}
+	sort(vec.begin(),vec.end());	
+	cout<< vec.size() <<endl;
+	for(int i=0;i<vec.size();i++) cout<< vec[i] <<endl;
 	return 0;
 }
