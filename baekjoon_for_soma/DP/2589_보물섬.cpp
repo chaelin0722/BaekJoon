@@ -1,9 +1,11 @@
+#include<iostream>
+#include<queue>
 #include<stdio.h>
 #include<stdlib.h>
-#include<algorithm>
+#include<string.h>
 #include<math.h>
-#include <iostream>
-#include <queue>
+#include<algorithm>
+
 using namespace std;
 
 #define MAX 51
@@ -18,10 +20,10 @@ bool visit[MAX][MAX];
 int dx[4] = {0,0,1,-1};
 int dy[4] = {1,-1, 0, 0};
 
-void BFS(int x, int y){
-	visit[x][y] = true;
+void BFS(int inx, int iny){
+	visit[inx][iny] = true;
 	queue< pair <int, int> > que;
-	que.push(make_pair(x,y));
+	que.push(make_pair(inx,iny));
 	
 	while(!que.empty()){
 		int x = que.front().first;
