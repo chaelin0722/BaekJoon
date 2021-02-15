@@ -14,8 +14,8 @@ int N, M,K;
 int cnt = 0;
 bool visit[MAX][MAX];
 
-int dx = {0,0,1,-1};
-int dy = (1,-1, 0, 0);
+int dx[4] = {0,0,1,-1};
+int dy[4] = {1,-1, 0, 0};
 
 void DFS(int x, int y){
 	visit[x][y] = true;
@@ -61,6 +61,6 @@ int main(){
 	}
 	sort(vec.begin(),vec.end());	
 	cout<< vec.size() <<endl;
-	for(int i=0;i<vec.size();i++) cout<< vec[i] <<endl;
+	for(int i=0;i<vec.size();i++) cout<< vec[i] <<' ';
 	return 0;
 }
