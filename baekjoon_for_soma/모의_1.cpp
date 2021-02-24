@@ -1,10 +1,12 @@
 #include <iostream>
-#include <cstring> //memset
-#include <stdio.h> // printf, scanf
+#include <cstring>
+#include <stdio.h> 
+#include <string>
+#define MAX 50
 
 int cnt1 = 0; 
 int cnt2 = 0;
-char result;
+char b[MAX];
 using namespace std;
 
 void init(){
@@ -14,18 +16,20 @@ void init(){
 }
 int main() {
 	init();
-	char b;
     cin>> b;
     
-    for(int i=0;i<sizeof(b);i++){
-    	if(b == '(') cnt1++;
+	string result;
+    cout<<strlen(b);
+	/*
+	for(int i=0;i<strlen(b);i++){
+    	if(b[i] == '(') cnt1++;
     	else cnt2++;
 	} 
 	
-	//if(cnt1 == cnt2) result = "YES";
-    //else result = "NO";
-    cout<<sizeof(b);
-    //cout<<result<<endl;
+	if(cnt1 == cnt2) result = "YES";
+    else result = "NO";
     
+	cout<<result<<endl;
+    */
     return 0;
 }
